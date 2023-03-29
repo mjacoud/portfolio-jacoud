@@ -84,7 +84,7 @@ export const Home = ({ theme, currentLanguage }: Partial<themeProps>) => {
                     className="home__blob-img"
                     x="-84"
                     y="-129"
-                    href="https://postimg.cc/9wMj77Dm"
+                    href="assets\image\photos\image-croped.png"
                   />
                 </g>
               </svg>
