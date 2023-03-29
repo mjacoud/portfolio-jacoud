@@ -1,0 +1,45 @@
+@use '../../Styles/Abstract/index' as *;
+
+.portfolio__container{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+  
+}
+
+.portfolio__project{
+  width: 90%;
+  border-radius: 20%;
+  transition: 0.5s all ease-in-out;
+ 
+  &:hover{
+    opacity:0.3;
+    transform: scale(1.1);
+    
+  }
+}
+
+
+
+.portfolio__text{
+  padding-top: 2rem;
+  text-align: center;
+  font-size: $h3-font-size;
+  text-decoration: none;
+}
+
+.button--portfolio{
+  padding: 1rem;
+  text-decoration: none;
+  padding: 1rem 6rem;
+
+  a{
+    color: white;
+  }
+}
+
+.portfolio__link{
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}

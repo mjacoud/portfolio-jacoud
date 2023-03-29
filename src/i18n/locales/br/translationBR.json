@@ -1,0 +1,35 @@
+{
+  "HomeTitle":"Olá,   me chamo Matheus",
+  "HomeSubTitle":"Desenvolvedor Frontend",
+  "HomeDescription":"Construindo soluções digitais eficientes e elegantes.",
+  "HomeButton":"Fale Comigo",
+
+  "AboutTitle":"Sobre mim",
+  "AboutSubTitle":"Minha introdução",
+  "AboutDescription":"Sou apaixonado por criar experiências digitais incríveis e envolventes. Meu objetivo é construir interfaces elegantes e eficientes que não só atraiam usuários, mas que também os mantenham engajados e interagindo com o conteúdo.",
+  "AboutYears":"Anos",
+  "AboutExperience":"Experiência",
+  "AboutCompleted":"Completos",
+  "AboutProjects":"Projetos",
+  "AboutCompanies":"Empresas",
+  "AboutWorked":"Trabalhadas",
+  "AboutButton":"Baixar CV",
+
+  "SkillsTitle":"Habilidades",
+  "SkillsSubTitle":"Minhas Habilidades",
+  "SkillsLanguages":"Linguagens",
+  "SkillsFrameworks":"Frameworks",
+  "SkillsLibraries":"Libraries",
+  "SkillsTest":"Libraries de teste",
+  "SkillsVersion":"Controle de versionamento",
+  
+  "PortfolioSubTitle":"Meus Projetos",
+  "PortfolioButton":"Ver Mais",
+
+  "ContactTitle":"Contato",
+  "ContactSubTitle":"Entre em contato",
+  "ContactDescription":"Tem alguma dica, sugestão ou só que entrar em contato? me envie uma mensagem! ",
+  "ContactButton":"Enviar Mensagem",
+  "ContactName":"Nome",
+  "ContactMessage":"Envie sua Mensagem"
+}

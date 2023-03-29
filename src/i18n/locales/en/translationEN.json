@@ -1,0 +1,40 @@
+{
+  "HomeTitle":"Hi, I'm Matheus",
+  "HomeSubTitle":"Frontend developer",
+  "HomeDescription":"Building efficient and elegant digital solutions",
+  "HomeButton":"Contact Me",
+
+  "AboutTitle":"About Me",
+  "AboutSubTitle":"My Introduction",
+  "AboutDescription":"I have a passion for creating amazing and engaging digital experiences. My goal is to build elegant and efficient interfaces that not only attract users, but also keep them engaged and interacting with the content.",
+  "AboutYears":"Years",
+  "AboutExperience":"Experience",
+  "AboutCompleted":"Completed",
+  "AboutProjects":"Projects",
+  "AboutCompanies":"Companies",
+  "AboutWorked":"Worked",
+  "AboutButton":"Download CV",
+
+  "SkillsTitle":"Skills",
+  "SkillsSubTitle":"My set of Skills",
+  "SkillsLanguages":"Languages",
+  "SkillsFrameworks":"frameworks",
+  "SkillsLibraries":"Libraries",
+  "SkillsTest":"Testing Libraries",
+  "SkillsVersion":"Version Control",
+
+  "PortfolioSubTitle":"My Projects",
+  "PortfolioButton":"Show More",
+
+  "ContactTitle":"Contact",
+  "ContactSubTitle":"Get in Touch With Me",
+  "ContactDescription":"Got Any tips, suggestions or just wanna get in touch? Send me a message! ",
+  "ContactButton":"Send Message",
+  "ContactName":"Name",
+
+  "ContactMessage":"Type Your Message"
+
+
+  
+  
+}

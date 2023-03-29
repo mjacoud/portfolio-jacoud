@@ -1,0 +1,27 @@
+@use '../Abstract/index' as *;
+
+.section{
+  padding: 4rem 0 4rem;
+}
+
+.section__title{
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.section__subtitle{
+  font-size: $small-font-size;
+  font-weight: 400;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: $mb-3;
+}
+
+.section__header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2,.section__subtitle{
+    text-align: center;
+  }
+}

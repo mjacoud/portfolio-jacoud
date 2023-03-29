@@ -1,0 +1,169 @@
+
+
+.theme__light--purple{
+  --hue-color:250;
+
+  --first-color:hsl(var(--hue-color),69%,61%);
+  --first-color-second:hsl(var(--hue-color),69%,61%);
+  --first-color-alt:hsl(var(--hue-color),57%,53%);
+  --first-color-lighter:hsl(var(--hue-color),92%,85%);
+  --title-color:hsl(var(--hue-color),8%,15%);
+  --text-color:hsl(var(--hue-color),8%,45%);
+  --text-color-light:hsl(var(--hue-color),8%,65%);
+  --input-color:hsl(var(--hue-color),70%,96%);
+  --body-color:hsl(var(--hue-color),60%,99%);
+  --container-color:#fff;
+}
+
+.theme__dark--purple{
+  --hue-color:250;
+
+  --first-color:hsl(var(--hue-color),69%,61%);
+  --first-color-second:hsl(var(--hue-color),30%,8%);
+  --title-color:hsl(var(--hue-color),8%,95%);
+  --skills-title-color:black;
+  --text-color:hsl(var(--hue-color),8%,75%);
+  --input-color:hsl(var(--hue-color),29%,16%);
+  --body-color:hsl(var(--hue-color),28%,12%);
+  --container-color:hsl(($hue-color),29%,16%);
+}
+
+.theme__light--red{
+  --hue-color:352;
+
+  --first-color:hsl(var(--hue-color),69%,61%);
+  --first-color-second:hsl(var(--hue-color),69%,61%);
+  --first-color-alt:hsl(var(--hue-color),57%,53%);
+  --first-color-lighter:hsl(var(--hue-color),92%,85%);
+  --title-color:hsl(var(--hue-color),8%,15%);
+  --text-color:hsl(var(--hue-color),8%,45%);
+  --text-color-light:hsl(var(--hue-color),8%,65%);
+  --input-color:hsl(var(--hue-color),70%,96%);
+  --body-color:hsl(var(--hue-color),60%,99%);
+  --container-color:#fff;
+}
+
+.theme__dark--red{
+  --hue-color:352;
+
+  --first-color:hsl(var(--hue-color),69%,61%);
+  --first-color-second:hsl(var(--hue-color),30%,8%);
+  --title-color:hsl(var(--hue-color),8%,95%);
+  --skills-title-color:black;
+  --text-color:hsl(var(--hue-color),8%,75%);
+  --input-color:hsl(var(--hue-color),29%,16%);
+  --body-color:hsl(var(--hue-color),28%,12%);
+  --container-color:hsl(($hue-color),29%,16%);
+}
+
+.theme__light--green{
+  --hue-color:146;
+
+  --first-color:hsl(var(--hue-color),69%,61%);
+  --first-color-second:hsl(var(--hue-color),69%,61%);
+  --first-color-alt:hsl(var(--hue-color),57%,53%);
+  --first-color-lighter:hsl(var(--hue-color),92%,85%);
+  --title-color:hsl(var(--hue-color),8%,15%);
+  --text-color:hsl(var(--hue-color),8%,45%);
+  --text-color-light:hsl(var(--hue-color),8%,65%);
+  --input-color:hsl(var(--hue-color),70%,96%);
+  --body-color:hsl(var(--hue-color),60%,99%);
+  --container-color:#fff;
+}
+
+.theme__dark--green{
+  --hue-color:146;
+
+  --first-color:hsl(var(--hue-color),69%,61%);
+  --first-color-second:hsl(var(--hue-color),30%,8%);
+  --title-color:hsl(var(--hue-color),8%,95%);
+  --skills-title-color:black;
+  --text-color:hsl(var(--hue-color),8%,75%);
+  --input-color:hsl(var(--hue-color),29%,16%);
+  --body-color:hsl(var(--hue-color),28%,12%);
+  --container-color:hsl(($hue-color),29%,16%);
+}
+
+.theme__light--yellow{
+  --hue-color:62;
+
+  --first-color:hsl(var(--hue-color),64%,44%);
+  --first-color-second:hsl(var(--hue-color),69%,61%);
+  --first-color-alt:hsl(var(--hue-color),57%,53%);
+  --first-color-lighter:hsl(var(--hue-color),92%,85%);
+  --title-color:hsl(var(--hue-color),8%,15%);
+  --text-color:hsl(var(--hue-color),8%,45%);
+  --text-color-light:hsl(var(--hue-color),8%,65%);
+  --input-color:hsl(var(--hue-color),70%,96%);
+  --body-color:hsl(var(--hue-color),60%,99%);
+  --container-color:#fff;
+}
+
+.theme__dark--yellow{
+  --hue-color:62;
+
+  --first-color:hsl(var(--hue-color),64%,44%);
+  --first-color-second:hsl(var(--hue-color),30%,8%);
+  --title-color:hsl(var(--hue-color),8%,95%);
+  --skills-title-color:black;
+  --text-color:hsl(var(--hue-color),8%,75%);
+  --input-color:hsl(var(--hue-color),29%,16%);
+  --body-color:hsl(var(--hue-color),28%,12%);
+  --container-color:hsl(($hue-color),29%,16%);
+}
+
+.theme__light--blue{
+  --hue-color:228;
+
+  --first-color:hsl(var(--hue-color),69%,61%);
+  --first-color-second:hsl(var(--hue-color),69%,61%);
+  --first-color-alt:hsl(var(--hue-color),57%,53%);
+  --first-color-lighter:hsl(var(--hue-color),92%,85%);
+  --title-color:hsl(var(--hue-color),8%,15%);
+  --text-color:hsl(var(--hue-color),8%,45%);
+  --text-color-light:hsl(var(--hue-color),8%,65%);
+  --input-color:hsl(var(--hue-color),70%,96%);
+  --body-color:hsl(var(--hue-color),60%,99%);
+  --container-color:#fff;
+}
+
+.theme__dark--blue{
+  --hue-color:228;
+
+  --first-color:hsl(var(--hue-color),69%,61%);
+  --first-color-second:hsl(var(--hue-color),30%,8%);
+  --title-color:hsl(var(--hue-color),8%,95%);
+  --skills-title-color:black;
+  --text-color:hsl(var(--hue-color),8%,75%);
+  --input-color:hsl(var(--hue-color),29%,16%);
+  --body-color:hsl(var(--hue-color),28%,12%);
+  --container-color:hsl(($hue-color),29%,16%);
+}
+
+.theme__light--orange{
+  --hue-color:24;
+
+  --first-color:hsl(var(--hue-color),69%,61%);
+  --first-color-second:hsl(var(--hue-color),69%,61%);
+  --first-color-alt:hsl(var(--hue-color),57%,53%);
+  --first-color-lighter:hsl(var(--hue-color),92%,85%);
+  --title-color:hsl(var(--hue-color),8%,15%);
+  --text-color:hsl(var(--hue-color),8%,45%);
+  --text-color-light:hsl(var(--hue-color),8%,65%);
+  --input-color:hsl(var(--hue-color),70%,96%);
+  --body-color:hsl(var(--hue-color),60%,99%);
+  --container-color:#fff;
+}
+
+.theme__dark--orange{
+  --hue-color:24;
+
+  --first-color:hsl(var(--hue-color),69%,61%);
+  --first-color-second:hsl(var(--hue-color),30%,8%);
+  --title-color:hsl(var(--hue-color),8%,95%);
+  --skills-title-color:black;
+  --text-color:hsl(var(--hue-color),8%,75%);
+  --input-color:hsl(var(--hue-color),29%,16%);
+  --body-color:hsl(var(--hue-color),28%,12%);
+  --container-color:hsl(($hue-color),29%,16%);
+}

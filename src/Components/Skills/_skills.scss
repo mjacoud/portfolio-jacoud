@@ -1,0 +1,68 @@
+@use '../../Styles/Abstract/index' as *;
+
+.skills__section{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+	align-items: center ;
+}
+
+.skills__container{
+  border-radius: 20%;
+
+  padding: 1.75rem;
+
+	width: 65%;
+
+  background-color:white;
+
+  -webkit-box-shadow: inset 0px -2px 5px 5px rgba(0,0,0,0.1);
+  -moz-box-shadow: inset 0px -2px 5px 5px rgba(0,0,0,0.1);
+  box-shadow: inset 0px -2px 5px 5px rgba(0,0,0,0.1);
+}
+
+
+.skills__container-title{
+  padding-bottom: 2rem;
+  text-align: center;
+  color:black
+}
+
+.skills__item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.skills__card{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(75px,1fr));
+  gap: 20px;
+
+}
+
+.skills__item-logo{
+
+
+  width: 50px;
+  height: auto;
+
+  
+  border-radius: 20%;
+}
+
+.skills__item-title{
+  font-size: $h3-font-size;
+  font-weight: $font-semi-bold;
+  color:black
+}
+
+.skills__item-longTitle{
+	font-size: $small-font-size;
+	font-weight: $font-semi-bold;
+  text-align: center;
+  color:black
+}

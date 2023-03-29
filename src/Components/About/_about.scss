@@ -1,0 +1,49 @@
+@use '../../Styles/Abstract/index' as *;
+
+.about__rectangle{
+ display: flex;
+ background-color:var(--first-color);
+  width: 200px;
+  height: auto;
+  border-radius: 20%;
+  justify-content: center;
+  overflow: hidden;
+  justify-self: center;
+}
+
+.about__img{
+  width: 100%;
+}
+
+.about__description{
+  text-align: center;
+  margin-bottom: $mb-2-5;
+}
+
+.about__info{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: $mb-2-5;
+}
+
+.about__info-title{
+  font-size: $h2-font-size;
+  font-weight: $font-semi-bold;
+  color: var(--title-color);
+}
+
+.about__info-name{
+  font-size: $smaller-font-size;
+}
+
+.about__info-title,
+.about__info-name{
+  display: flex;
+  justify-content: center;
+}
+
+.about__buttons{
+  display: flex;
+  justify-content: center;
+
+}

@@ -1,0 +1,34 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "framer": "^2.3.0",
+    "framer-motion": "^7.10.3",
+    "i18next": "^22.4.10",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "motion": "^10.15.5",
+    "react": "^18.2.0",
+    "react-burger-menu": "^3.0.9",
+    "react-dom": "^18.2.0",
+    "react-form-hook": "^0.0.1",
+    "react-hook-form": "^7.43.8",
+    "react-i18next": "^12.1.5",
+    "vite-node": "^0.28.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-burger-menu": "^2.8.3",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0"
+  }
+}
