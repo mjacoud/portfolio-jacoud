@@ -425,7 +425,7 @@ export const Skills = ({ theme, currentLanguage }: Partial<themeProps>) => {
                 className="skills__item"
               >
                 <img
-                  src="https://portfolio-jacoud.pages.dev/src/assets/image/icons/framermotioN.png"
+                  src="src\assets\image\icons\framermotioN.png"
                   className="skills__item-logo"
                   alt=""
                 />
