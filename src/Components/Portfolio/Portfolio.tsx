@@ -2,6 +2,7 @@ import { themeProps } from '../../types/types'
 import { motion } from 'framer-motion'
 import portfolio from './portfolio.scss'
 import { useTranslation } from 'react-i18next'
+import gym from '/src/assets/image/projects/gym.png'
 
 export const Portfolio = ({ theme, currentLanguage }: Partial<themeProps>) => {
   const { t } = useTranslation(currentLanguage)
@@ -55,7 +56,7 @@ export const Portfolio = ({ theme, currentLanguage }: Partial<themeProps>) => {
               className="portfolio__link"
             >
               <img
-                src="src\assets\image\projects\gym.png"
+                src={gym}
                 alt="gym-landing-page"
                 className="portfolio__project"
               />
