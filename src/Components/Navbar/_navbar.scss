@@ -205,8 +205,12 @@ align-items: center;
   
 }
 
-.scroll--header{
+.scroll__light--header{
   box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+}
+
+.scroll__dark--header{
+  box-shadow: 0 -1px 4px rgba(255, 255, 255, 0.5);
 }
 
 .uil-setting{

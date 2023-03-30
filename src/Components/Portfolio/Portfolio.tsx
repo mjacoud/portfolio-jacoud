@@ -49,7 +49,7 @@ export const Portfolio = ({ theme, currentLanguage }: Partial<themeProps>) => {
                 hidden: { opacity: 0, y: -100 },
                 visible: { opacity: 1, y: 0 }
               }}
-              href="https://1d21c5d8.gym-f3y.pages.dev
+              href="https://gym-f3y.pages.dev/
               "
               target="_blank"
               className="portfolio__link"
