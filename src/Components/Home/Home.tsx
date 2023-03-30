@@ -2,6 +2,7 @@ import { TranslationProps, useTranslation } from 'react-i18next'
 import { themeProps } from '../../types/types'
 import home from './home.scss'
 import { motion } from 'framer-motion'
+import image_croped from '/src/assets/image/photos/image-croped.png'
 
 export const Home = ({ theme, currentLanguage }: Partial<themeProps>) => {
   const { t } = useTranslation(currentLanguage)
@@ -60,10 +61,7 @@ export const Home = ({ theme, currentLanguage }: Partial<themeProps>) => {
               className="home__img"
             >
               <div className="home__blob">
-                <img
-                  className="home__blob-img"
-                  src="src\assets\image\photos\image-croped.png"
-                />
+                <img className="home__blob-img" src={image_croped} />
               </div>
             </motion.div>
 

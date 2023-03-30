@@ -3,6 +3,8 @@ import { motion } from 'framer-motion'
 import portfolio from './portfolio.scss'
 import { useTranslation } from 'react-i18next'
 import gym from '/src/assets/image/projects/gym.png'
+import notes from '/src/assets/image/projects/notes.png'
+import meals from '/src/assets/image/projects/meals.png'
 
 export const Portfolio = ({ theme, currentLanguage }: Partial<themeProps>) => {
   const { t } = useTranslation(currentLanguage)
@@ -77,7 +79,7 @@ export const Portfolio = ({ theme, currentLanguage }: Partial<themeProps>) => {
               className="portfolio__link"
             >
               <img
-                src="src\assets\image\projects\notes.png"
+                src={notes}
                 alt="todo-notes-app"
                 className="portfolio__project"
               />
@@ -98,7 +100,7 @@ export const Portfolio = ({ theme, currentLanguage }: Partial<themeProps>) => {
               className="portfolio__link"
             >
               <img
-                src="src\assets\image\projects\meals.png"
+                src={meals}
                 alt="search-meals"
                 className="portfolio__project"
               />

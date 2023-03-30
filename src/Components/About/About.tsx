@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { themeProps } from '../../types/types'
 import { motion } from 'framer-motion'
 import about from './about.scss'
+import image2_croped from '/src/assets/image/photos/image2-croped.png'
 
 export const About = ({ theme, currentLanguage }: Partial<themeProps>) => {
   const { t } = useTranslation(currentLanguage)
@@ -50,10 +51,7 @@ export const About = ({ theme, currentLanguage }: Partial<themeProps>) => {
             }}
             className="about__rectangle"
           >
-            <img
-              src="src\assets\image\photos\image2-croped.png"
-              className="about__img"
-            />
+            <img src={image2_croped} className="about__img" />
           </motion.div>
           <div className="about__data">
             <motion.p
