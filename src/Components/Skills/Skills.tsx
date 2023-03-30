@@ -3,7 +3,7 @@ import skills from './skills.scss'
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import framerMotion from '/src/assets/image/icons/framermotioN.png'
-import tailwind from '/src/assets/image/icons/tailwind.png'
+import tailwind from '/src/assets/image/icons/Tailwind.png'
 import vitest from '/src/assets/image/icons/vitest.png'
 
 export const Skills = ({ theme, currentLanguage }: Partial<themeProps>) => {
