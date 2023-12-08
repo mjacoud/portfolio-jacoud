@@ -2,6 +2,9 @@ import { themeProps } from '../../types/types'
 import { motion } from 'framer-motion'
 import portfolio from './portfolio.scss'
 import { useTranslation } from 'react-i18next'
+import gym from '/src/assets/image/projects/gym.png'
+import notes from '/src/assets/image/projects/notes.png'
+import meals from '/src/assets/image/projects/meals.png'
 
 export const Portfolio = ({ theme, currentLanguage }: Partial<themeProps>) => {
   const { t } = useTranslation(currentLanguage)
@@ -49,6 +52,7 @@ export const Portfolio = ({ theme, currentLanguage }: Partial<themeProps>) => {
                 hidden: { opacity: 0, y: -100 },
                 visible: { opacity: 1, y: 0 }
               }}
+<<<<<<< HEAD
               href="https://role-frontend.vercel.app/
               "
               target="_blank"
@@ -72,18 +76,45 @@ export const Portfolio = ({ theme, currentLanguage }: Partial<themeProps>) => {
                 visible: { opacity: 1, y: 0 }
               }}
               href="https://1d21c5d8.gym-f3y.pages.dev
+=======
+              href="https://gym-f3y.pages.dev/
+>>>>>>> 4ee4c51d3180f8d6bc4a0abcf876e51e1743b03e
               "
               target="_blank"
               className="portfolio__link"
             >
               <img
-                src="src\assets\image\projects\gym.png"
+                src={gym}
                 alt="gym-landing-page"
                 className="portfolio__project"
               />
             </motion.a>
           </div>
+<<<<<<< HEAD
 
+=======
+          <div className="portfolio__container">
+            <motion.a
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.6 }}
+              variants={{
+                hidden: { opacity: 0, y: -100 },
+                visible: { opacity: 1, y: 0 }
+              }}
+              href="https://project-notes.pages.dev/"
+              target="_blank"
+              className="portfolio__link"
+            >
+              <img
+                src={notes}
+                alt="todo-notes-app"
+                className="portfolio__project"
+              />
+            </motion.a>
+          </div>
+>>>>>>> 4ee4c51d3180f8d6bc4a0abcf876e51e1743b03e
           <div className="portfolio__container">
             <motion.a
               initial="hidden"
@@ -99,7 +130,7 @@ export const Portfolio = ({ theme, currentLanguage }: Partial<themeProps>) => {
               className="portfolio__link"
             >
               <img
-                src="src\assets\image\projects\meals.png"
+                src={meals}
                 alt="search-meals"
                 className="portfolio__project"
               />

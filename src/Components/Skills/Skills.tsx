@@ -2,6 +2,9 @@ import { themeProps } from '../../types/types'
 
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
+import framerMotion from '/src/assets/image/icons/framermotioN.png'
+import tailwind from '/src/assets/image/icons/Tailwind.png'
+import vitest from '/src/assets/image/icons/vitest.png'
 
 export const Skills = ({ currentLanguage }: Partial<themeProps>) => {
   const { t } = useTranslation(currentLanguage)
@@ -424,11 +427,7 @@ export const Skills = ({ currentLanguage }: Partial<themeProps>) => {
                 }}
                 className="skills__item"
               >
-                <img
-                  src="src/assets/image/icons/framermotioN.png"
-                  className="skills__item-logo"
-                  alt=""
-                />
+                <img src={framerMotion} className="skills__item-logo" alt="" />
 
                 <p className="skills__item-longTitle">Framer Motion</p>
               </motion.div>
@@ -444,11 +443,7 @@ export const Skills = ({ currentLanguage }: Partial<themeProps>) => {
                 }}
                 className="skills__item"
               >
-                <img
-                  src="src\assets\image\icons\Tailwind.png"
-                  className="skills__item-logo"
-                  alt=""
-                />
+                <img src={tailwind} className="skills__item-logo" alt="" />
 
                 <p className="skills__item-title">Tailwind</p>
               </motion.div>
@@ -540,11 +535,7 @@ export const Skills = ({ currentLanguage }: Partial<themeProps>) => {
                 }}
                 className="skills__item"
               >
-                <img
-                  src="src\assets\image\icons\vitest.png"
-                  className="skills__item-logo"
-                  alt=""
-                />
+                <img src={vitest} className="skills__item-logo" alt="" />
 
                 <p className="skills__item-title">Vitest</p>
               </motion.div>

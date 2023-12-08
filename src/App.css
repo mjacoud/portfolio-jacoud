@@ -1,3 +1,12 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
 @font-face {
   font-family: "poppins-medium";
   src: url("../../assets/fonts/Poppins-Medium.ttf") format("ttf");
@@ -14,15 +23,6 @@
   font-family: "TiltWarp";
   src: url("../../assets/fonts/TiltWarp-Regular.ttf") format("ttf");
 }
-* {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style-type: none;
-}
-
 /* Root */
 /* Fonts and typograph */
 /* Font Weight */
@@ -372,8 +372,12 @@ img {
   stroke: var(--first-color);
 }
 
-.scroll--header {
+.scroll__light--header {
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.scroll__dark--header {
+  box-shadow: 0 -1px 4px rgba(255, 255, 255, 0.5);
 }
 
 .uil-setting {
@@ -525,12 +529,24 @@ ul .nav__list {
 }
 
 .home__blob {
-  width: 200px;
-  fill: var(--first-color);
+  background-color: var(--first-color);
+  width: 400px;
+  height: 400px;
+  -webkit-clip-path: circle(40%);
+          clip-path: circle(40%);
 }
 
 .home__blob-img {
-  width: 300px;
+  width: 358px;
+  top: -104px;
+  position: relative;
+  right: 15px;
+}
+
+.blob {
+  background-color: var(--first-color);
+  width: 400px;
+  height: 400px;
 }
 
 .home__data {
@@ -695,9 +711,12 @@ ul .nav__list {
 }
 
 .portfolio__project {
-  width: 90%;
+  width: 70%;
   border-radius: 20%;
   transition: 0.5s all ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .portfolio__project:hover {
   opacity: 0.3;
@@ -916,6 +935,19 @@ button .uil {
     transition: 0.3s;
     width: 100%;
   }
+  .home__blob {
+    background-color: var(--first-color);
+    width: 188px;
+    height: 233px;
+    -webkit-clip-path: circle(40%);
+    clip-path: circle(40%);
+  }
+  .home__blob-img {
+    width: 358px;
+    top: -44px;
+    position: relative;
+    right: 15px;
+  }
 }
 @media screen and (min-width: 350px) {
   .nav__logo--mini {
@@ -935,6 +967,19 @@ button .uil {
     text-align: center;
     transition: 0.3s;
     width: 100%;
+  }
+  .home__blob {
+    width: 181px;
+    height: 210px;
+    top: -7px;
+    position: relative;
+    right: 1px;
+  }
+  .home__blob-img {
+    width: 328px;
+    top: -30px;
+    position: relative;
+    right: 15px;
   }
 }
 @media screen and (min-width: 455px) {
@@ -972,7 +1017,7 @@ button .uil {
   }
   /* Smallest About */
   .about__description {
-    padding: 0 2rem;
+    padding: 0 7rem;
   }
   .about__info-name {
     text-align: center;
@@ -984,6 +1029,13 @@ button .uil {
   /* Contactest */
   .contact__subtitle {
     padding: 0 2rem 2rem 2rem;
+  }
+  .contact__form .button--flex {
+    margin-left: 1rem;
+    width: 96%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
   }
 }
 /* Small Devices */
@@ -1087,6 +1139,19 @@ button .uil {
   .home__social {
     padding-bottom: 1.5rem;
   }
+  .home__blob {
+    width: 329px;
+    height: 244px;
+    top: -7px;
+    position: relative;
+    right: 1px;
+  }
+  .home__blob-img {
+    width: 328px;
+    top: -152px;
+    position: relative;
+    right: 15px;
+  }
   .section__title {
     font-size: 3.5rem;
   }
@@ -1149,6 +1214,11 @@ button .uil {
   }
   .contact__form .button--flex {
     font-size: 1.75rem;
+    margin-left: 1rem;
+    width: 96%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
   }
   .button--contact {
     align-items: center;
@@ -1207,9 +1277,8 @@ button .uil {
     display: flex;
     justify-content: center;
   }
-  .home__blob {
-    display: flex;
-    width: 335px;
+  .contact__stack {
+    padding-bottom: 3rem;
   }
 }
 @media screen and (min-width: 900px) {
@@ -1219,9 +1288,39 @@ button .uil {
   .container {
     max-width: none;
   }
+  .contact__stack {
+    padding-bottom: 3rem;
+  }
+  .contact__form .button--flex {
+    margin-left: 1rem;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .about__description {
+    font-size: 1.75rem;
+    padding: 0 16.5rem;
+    line-height: 2.5rem;
+  }
+  .contact__layout {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
 }
 @media screen and (min-width: 1024px) {
   .skills__card {
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  }
+  .contact__form .button--flex {
+    margin-left: 1rem;
+    width: 97%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
   }
 }/*# sourceMappingURL=App.css.map */

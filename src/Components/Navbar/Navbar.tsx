@@ -54,10 +54,6 @@ export const Navbar = ({
     }
   }
 
-  const handleHue = (color: string) => {
-    setHue(color)
-  }
-
   const handleLanguage = () => {
     if (language === 'nav__button--portuguese') {
       setLanguage('nav__button--english nav__button--animation')
@@ -79,19 +75,13 @@ export const Navbar = ({
 
   useEffect(() => {
     const handleScroll = (e: Event) => {
-      if (scrollY <= 20 ? 'header' : 'header scroll--header') {
-        setScrollClass('header')
-      } else {
-        setScrollClass('header scroll--header')
-      }
+      window.scrollY <= 20
+        ? setScrollClass('header')
+        : setScrollClass(`header scroll__${mode}--header`)
     }
-
+    console.log(mode)
     window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+  }, [scrollClass])
 
   return (
     <>
