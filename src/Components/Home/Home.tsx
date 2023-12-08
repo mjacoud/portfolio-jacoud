@@ -1,6 +1,5 @@
-import { TranslationProps, useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next'
 import { themeProps } from '../../types/types'
-import home from './home.scss'
 import { motion } from 'framer-motion'
 import image_croped from '/src/assets/image/photos/image-croped.png'
 

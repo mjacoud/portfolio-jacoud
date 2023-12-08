@@ -2,6 +2,9 @@ import { themeProps } from '../../types/types'
 import { motion } from 'framer-motion'
 import portfolio from './portfolio.scss'
 import { useTranslation } from 'react-i18next'
+import gym_image from '../../assets/image/projects/gym.png'
+import meal_image from '../../assets/image/projects/meals.png'
+import role_image from '../../assets/image/projects/role.png'
 
 export const Portfolio = ({ theme, currentLanguage }: Partial<themeProps>) => {
   const { t } = useTranslation(currentLanguage)
@@ -55,7 +58,7 @@ export const Portfolio = ({ theme, currentLanguage }: Partial<themeProps>) => {
               className="portfolio__link"
             >
               <img
-                src="src\assets\image\projects\role.png"
+                src={role_image}
                 alt="role-page"
                 className="portfolio__project"
               />
@@ -77,7 +80,7 @@ export const Portfolio = ({ theme, currentLanguage }: Partial<themeProps>) => {
               className="portfolio__link"
             >
               <img
-                src="src\assets\image\projects\gym.png"
+                src={gym_image}
                 alt="gym-landing-page"
                 className="portfolio__project"
               />
@@ -99,7 +102,7 @@ export const Portfolio = ({ theme, currentLanguage }: Partial<themeProps>) => {
               className="portfolio__link"
             >
               <img
-                src="src\assets\image\projects\meals.png"
+                src={meal_image}
                 alt="search-meals"
                 className="portfolio__project"
               />
