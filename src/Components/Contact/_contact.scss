@@ -1,71 +1,71 @@
 @use '../../Styles/Abstract/index' as *;
 
-
-.contact__container{
+.contact__container {
   margin: 0.813rem;
 }
 
-.contact__title{
+.contact__title {
   font-size: $h3-font-size;
   font-weight: $font-medium;
 }
 
-.contact__subtitle{
-  text-align: center;
+.contact__subtitle {
+  color: var(--text-color-light);
   font-size: $small-font-size;
-  color:var(--text-color-light);
   padding-bottom: 0.813rem;
+  text-align: center;
 }
 
-.contact__content{
+.contact__content {
   background-color: var(--input-color);
-  border-radius: .5rem;
-  padding: .75rem 1rem .25rem 0;
+  border-radius: 0.5rem;
   margin: 0.813rem;
+  padding: 0.75rem 1rem 0.25rem 0;
 }
 
-button .uil{
+button .uil {
   padding-left: 20px;
 }
 
-.contact__input{
-  width: 100%;
+.contact__input {
   background-color: var(--input-color);
+  border: none;
   color: var(--text-color);
   font-family: $body-font;
   font-size: $normal-font-size;
-  border: none;
   outline: none;
-  padding: .25rem .5rem .5rem 0 ;
+  padding: 0.25rem 0.5rem 0.5rem 0;
+  width: 100%;
 }
 
-.contact__form{
-  .button--flex{
-    margin-left:1rem;
-    width: 92%;
+.contact__form {
+  .button--flex {
+    cursor: pointer;
     display: flex;
     justify-content: center;
-    cursor: pointer;
+    margin-left: 1rem;
+    width: 98%;
   }
 }
 
-#name,#email,#message{
+#name,
+#email,
+#message {
   padding-left: 1rem;
 }
 
-.contact__stack{
+.contact__stack {
+  padding-bottom: 2rem;
   padding-top: 2rem;
-  
 }
 
-.contact__button{
- 
-  .button--contact{
-  display: flex;
-  justify-content: flex-start;
-  
-  i{
-    padding-right: 1rem;
+.contact__button {
+  .button--contact {
+    display: flex;
+    justify-content: flex-start;
+
+    i {
+      padding-right: 1rem;
+    }
   }
-}
 }

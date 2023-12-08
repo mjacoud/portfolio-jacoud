@@ -49,6 +49,28 @@ export const Portfolio = ({ theme, currentLanguage }: Partial<themeProps>) => {
                 hidden: { opacity: 0, y: -100 },
                 visible: { opacity: 1, y: 0 }
               }}
+              href="https://role-frontend.vercel.app/
+              "
+              target="_blank"
+              className="portfolio__link"
+            >
+              <img
+                src="src\assets\image\projects\role.png"
+                alt="role-page"
+                className="portfolio__project"
+              />
+            </motion.a>
+          </div>
+          <div className="portfolio__container">
+            <motion.a
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.4 }}
+              variants={{
+                hidden: { opacity: 0, y: -100 },
+                visible: { opacity: 1, y: 0 }
+              }}
               href="https://1d21c5d8.gym-f3y.pages.dev
               "
               target="_blank"
@@ -61,27 +83,7 @@ export const Portfolio = ({ theme, currentLanguage }: Partial<themeProps>) => {
               />
             </motion.a>
           </div>
-          <div className="portfolio__container">
-            <motion.a
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.6 }}
-              variants={{
-                hidden: { opacity: 0, y: -100 },
-                visible: { opacity: 1, y: 0 }
-              }}
-              href="https://project-notes.pages.dev/"
-              target="_blank"
-              className="portfolio__link"
-            >
-              <img
-                src="src\assets\image\projects\notes.png"
-                alt="todo-notes-app"
-                className="portfolio__project"
-              />
-            </motion.a>
-          </div>
+
           <div className="portfolio__container">
             <motion.a
               initial="hidden"

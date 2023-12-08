@@ -70,7 +70,7 @@ export const About = ({ theme, currentLanguage }: Partial<themeProps>) => {
               {t('AboutDescription')}
             </motion.p>
 
-            <div className="about__info">
+            {/*    <div className="about__info">
               <motion.div
                 initial="hidden"
                 whileInView="visible"
@@ -124,7 +124,7 @@ export const About = ({ theme, currentLanguage }: Partial<themeProps>) => {
                   {t('AboutWorked')}
                 </span>
               </motion.div>
-            </div>
+            </div> */}
 
             <div className="about__buttons">
               <motion.a
@@ -138,7 +138,7 @@ export const About = ({ theme, currentLanguage }: Partial<themeProps>) => {
                 }}
                 className="button button--flex"
                 download=""
-                href="assets\resume\Matheus Jacoud.pdf"
+                href="assets\resume\Matheus_Jacoud.docx"
               >
                 {t('AboutButton')}
                 <i className="uil uil-download-alt button__icon"></i>

@@ -207,11 +207,11 @@ img {
 }
 
 .nav {
-  max-width: 968px;
-  height: 3rem;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  display: flex;
+  height: 3rem;
+  justify-content: space-between;
+  max-width: 968px;
 }
 
 .nav__logo {
@@ -223,21 +223,21 @@ img {
 }
 
 .nav__list {
-  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .nav__sectionMenu--open {
-  position: fixed;
-  width: 100%;
+  background-color: var(--body-color);
+  border-radius: 1.5rem 1.5rem 0 0;
   bottom: 0;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
   left: 0;
   padding: 2rem 1.5rem 4rem;
-  border-radius: 1.5rem 1.5rem 0 0;
+  position: fixed;
   text-align: center;
-  background-color: var(--body-color);
   transition: 0.3s;
-  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+  width: 100%;
 }
 
 .nav__sectionMenu--close {
@@ -257,12 +257,12 @@ img {
 }
 
 .nav__link {
+  align-items: center;
+  color: var(--title-color);
   display: flex;
   flex-direction: column;
-  align-items: center;
   font-size: 0.938rem;
   font-weight: 500;
-  color: var(--title-color);
   gap: 5px;
 }
 .nav__link:hover {
@@ -275,9 +275,9 @@ img {
 .nav__menu svg {
   height: 50px;
   position: absolute;
-  width: 50px;
-  top: 0%;
   right: 2%;
+  top: 0%;
+  width: 50px;
 }
 
 .burger {
@@ -292,9 +292,9 @@ img {
 .line {
   fill: none;
   stroke: var(--title-color);
-  stroke-width: 6px;
   stroke-linecap: round;
   stroke-linejoin: round;
+  stroke-width: 6px;
   transform-origin: 50%;
   transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms;
 }
@@ -315,11 +315,11 @@ img {
 }
 
 .nav__menu .line2 {
-  stroke-dasharray: 21 39;
+  stroke-dasharray: 19 39;
 }
 
 .nav__menu .line3 {
-  stroke-dasharray: 21 39;
+  stroke-dasharray: 19 39;
 }
 
 .nav__menu .line4 {
@@ -377,10 +377,10 @@ img {
 }
 
 .uil-setting {
+  font-size: 1.5rem;
   position: absolute;
   right: 70px;
   top: 10px;
-  font-size: 1.5rem;
 }
 .uil-setting:hover {
   animation: rotation 0.75s linear;
@@ -393,92 +393,92 @@ ul .nav__list {
 }
 
 .nav__color--red {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
   background-color: hsl(352, 69%, 61%);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
 }
 
 .nav__color--blue {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
   background-color: hsl(228, 69%, 61%);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
 }
 
 .nav__color--green {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
   background-color: hsl(146, 69%, 61%);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
 }
 
 .nav__color--purple {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
   background-color: hsl(250, 69%, 61%);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
 }
 
 .nav__color--orange {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
   background-color: hsl(24, 69%, 61%);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
 }
 
 .nav__color--yellow {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
   background-color: hsl(62, 64%, 44%);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
 }
 
 .nav__item {
+  cursor: pointer;
   display: flex;
   justify-content: center;
-  cursor: pointer;
 }
 
 .nav__button--mode {
-  position: absolute;
-  right: 115px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  outline: none;
-  cursor: pointer;
-  width: 1.5rem;
-  height: 1.5rem;
-  box-shadow: inset 0.495rem -0.375rem 0;
   border-radius: 999px;
+  box-shadow: inset 0.495rem -0.375rem 0;
   color: hsl(240, 47%, 41%);
+  cursor: pointer;
+  height: 1.5rem;
+  outline: none;
+  position: absolute;
+  right: 115px;
   transition: all 500ms;
+  width: 1.5rem;
 }
 .nav__button--mode:checked {
-  transform: scale(0.75);
-  color: hsl(40, 100%, 50%);
   box-shadow: inset 0 0 0 2.5rem, -0.975rem 0 0 -0.6rem, 0.975rem 0 0 -0.6rem, 0 -0.975rem 0 -0.6rem, 0 0.975rem 0 -0.6rem, -0.675rem -0.675rem 0 -0.6rem, 0.675rem 0.675rem 0 -0.6rem, -0.675rem 0.675rem 0 -0.6rem, 0.675rem -0.675rem 0 -0.6rem;
+  color: hsl(40, 100%, 50%);
+  transform: scale(0.75);
 }
 
 .nav__button--portuguese {
-  position: absolute;
+  background-image: url("assets/image/icons/portugues.png");
+  background-size: contain;
   display: inline-block;
   height: 1.5rem;
-  width: 1.5rem;
+  position: absolute;
   right: 165px;
-  background-size: contain;
-  background-image: url("assets/image/icons/portugues.png");
+  width: 1.5rem;
 }
 
 .nav__button--english {
-  position: absolute;
+  background-image: url("assets/image/icons/english.png");
+  background-size: contain;
   display: inline-block;
   height: 1.5rem;
-  width: 1.5rem;
+  position: absolute;
   right: 165px;
-  background-size: contain;
-  background-image: url("assets/image/icons/english.png");
+  width: 1.5rem;
 }
 
 .nav__button--animation {
@@ -736,17 +736,17 @@ ul .nav__list {
 }
 
 .contact__subtitle {
-  text-align: center;
-  font-size: 0.813rem;
   color: var(--text-color-light);
+  font-size: 0.813rem;
   padding-bottom: 0.813rem;
+  text-align: center;
 }
 
 .contact__content {
   background-color: var(--input-color);
   border-radius: 0.5rem;
-  padding: 0.75rem 1rem 0.25rem 0;
   margin: 0.813rem;
+  padding: 0.75rem 1rem 0.25rem 0;
 }
 
 button .uil {
@@ -754,29 +754,32 @@ button .uil {
 }
 
 .contact__input {
-  width: 100%;
   background-color: var(--input-color);
+  border: none;
   color: var(--text-color);
   font-family: "poppins-medium", sans-serif;
   font-size: 0.938rem;
-  border: none;
   outline: none;
   padding: 0.25rem 0.5rem 0.5rem 0;
+  width: 100%;
 }
 
 .contact__form .button--flex {
-  margin-left: 1rem;
-  width: 92%;
+  cursor: pointer;
   display: flex;
   justify-content: center;
-  cursor: pointer;
+  margin-left: 1rem;
+  width: 98%;
 }
 
-#name, #email, #message {
+#name,
+#email,
+#message {
   padding-left: 1rem;
 }
 
 .contact__stack {
+  padding-bottom: 2rem;
   padding-top: 2rem;
 }
 
@@ -876,18 +879,18 @@ button .uil {
     padding-top: 0;
   }
   .home__social {
-    grid-auto-flow: column;
     gap: 20px;
+    grid-auto-flow: column;
     padding-top: 20px;
   }
   .section {
     padding: 0rem 0 4rem;
   }
   .nav__logo--mini {
+    color: var(--title-color);
     display: block;
     font-size: 1rem;
     font-weight: 800;
-    color: var(--title-color);
   }
   .nav__logo {
     display: none;
@@ -902,16 +905,16 @@ button .uil {
     padding: 0 1.5rem 2rem 1.5rem;
   }
   .nav__settingsMenu--open {
-    position: fixed;
-    width: 100%;
+    background-color: var(--body-color);
+    border-radius: 1.5rem 1.5rem 0 0;
     bottom: 0;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
     left: 0;
     padding: 2rem 1.5rem 4rem;
-    border-radius: 1.5rem 1.5rem 0 0;
+    position: fixed;
     text-align: center;
-    background-color: var(--body-color);
     transition: 0.3s;
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    width: 100%;
   }
 }
 @media screen and (min-width: 350px) {
@@ -922,16 +925,16 @@ button .uil {
     display: block;
   }
   .nav__settingsMenu--open {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    padding: 2rem 1.5rem 4rem;
-    border-radius: 1.5rem 1.5rem 0 0;
-    text-align: center;
     background-color: var(--body-color);
-    transition: 0.3s;
+    border-radius: 1.5rem 1.5rem 0 0;
+    bottom: 0;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    left: 0;
+    padding: 2rem 1.5rem 7rem;
+    position: fixed;
+    text-align: center;
+    transition: 0.3s;
+    width: 100%;
   }
 }
 @media screen and (min-width: 455px) {
@@ -957,8 +960,8 @@ button .uil {
     padding-top: 0;
   }
   .home__social {
-    grid-auto-flow: column;
     gap: 20px;
+    grid-auto-flow: column;
     padding-top: 20px;
   }
   .section {
@@ -996,9 +999,11 @@ button .uil {
   .nav__logo {
     font-size: 2rem;
   }
-  .nav__button--english, .nav__button--portuguese, .nav__button--mode {
-    width: 2.5rem;
+  .nav__button--english,
+  .nav__button--portuguese,
+  .nav__button--mode {
     height: 2.5rem;
+    width: 2.5rem;
   }
   .uil-setting {
     font-size: 3rem;
@@ -1006,23 +1011,30 @@ button .uil {
     top: 14px;
   }
   .nav__menu svg {
-    width: 76px;
     height: 83px;
+    width: 76px;
   }
   .nav__button--mode {
     right: 150px;
   }
-  .nav__button--english, .nav__button--portuguese {
+  .nav__button--english,
+  .nav__button--portuguese {
     right: 225px;
   }
-  .nav__color--blue, .nav__color--red, .nav__color--green, .nav__color--purple, .nav__color--orange, .nav__color--yellow {
-    width: 40px;
+  .nav__color--blue,
+  .nav__color--red,
+  .nav__color--green,
+  .nav__color--purple,
+  .nav__color--orange,
+  .nav__color--yellow {
     height: 40px;
+    width: 40px;
   }
   .nav__item {
     padding-top: 2rem;
   }
-  .nav__link, .nav__link .uil {
+  .nav__link,
+  .nav__link .uil {
     font-size: 2rem;
   }
   .nav__list {
@@ -1054,8 +1066,8 @@ button .uil {
     font-size: 1.85rem;
   }
   .home__data .button--flex {
-    padding: 1.25rem 4.5rem 1.25rem 4.5rem;
     font-size: 2rem;
+    padding: 1.25rem 4.5rem 1.25rem 4.5rem;
   }
   .uil-whatsapp {
     font-size: 2.7rem;
@@ -1090,19 +1102,19 @@ button .uil {
     font-size: 2.7rem;
   }
   .about__info-name {
-    text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     font-size: 1.75rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
   }
   /* Medium Skills */
   .skills__container-title {
     text-align: center;
   }
   .about__buttons .button--flex {
+    font-size: 2rem;
     margin: 2rem 0 2rem 0;
     padding: 1.25rem 4.5rem 1.25rem 4.5rem;
-    font-size: 2rem;
   }
   .skills__card {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -1122,15 +1134,15 @@ button .uil {
   }
   /* Medium Portfolio */
   .portfolio__text .button--portfolio {
+    font-size: 2rem;
     margin: 2rem 0 2rem 0;
     padding: 1.25rem 4.5rem 1.25rem 4.5rem;
-    font-size: 2rem;
   }
   /* Medium Contact */
   .contact__subtitle {
     font-size: 1.75rem;
-    padding: 0 1.5rem;
     margin-bottom: 5rem;
+    padding: 0 1.5rem;
   }
   .contact__input {
     font-size: 2rem;
@@ -1139,8 +1151,8 @@ button .uil {
     font-size: 1.75rem;
   }
   .button--contact {
-    font-size: 1.75rem;
     align-items: center;
+    font-size: 1.75rem;
   }
   .contact__button .uil {
     margin-right: 2rem;
@@ -1167,24 +1179,27 @@ button .uil {
   .nav__settingsMenu--close {
     display: none;
   }
-  .nav__button--english, .nav__button--portuguese, .nav__button--mode {
+  .nav__button--english,
+  .nav__button--portuguese,
+  .nav__button--mode {
     height: 3.5rem;
     width: 3.5rem;
   }
   .uil-setting {
     font-size: 4rem;
-    right: 135px;
+    right: 150px;
     top: 45px;
   }
   .nav__menu svg {
-    width: 130px;
     height: 120px;
     top: 15%;
+    width: 130px;
   }
   .nav__button--mode {
     right: 230px;
   }
-  .nav__button--english, .nav__button--portuguese {
+  .nav__button--english,
+  .nav__button--portuguese {
     right: 330px;
   }
   /* Home */

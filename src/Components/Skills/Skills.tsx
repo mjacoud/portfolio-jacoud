@@ -1,9 +1,9 @@
 import { themeProps } from '../../types/types'
-import skills from './skills.scss'
+
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 
-export const Skills = ({ theme, currentLanguage }: Partial<themeProps>) => {
+export const Skills = ({ currentLanguage }: Partial<themeProps>) => {
   const { t } = useTranslation(currentLanguage)
 
   return (
