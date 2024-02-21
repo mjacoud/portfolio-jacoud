@@ -96,6 +96,7 @@
 
 .burger {
   filter: url(#gooeyness);
+  cursor: pointer;
 }
 .x {
   transform: scale(0);
@@ -142,19 +143,19 @@
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms, transform 400ms;
 }
 .active.nav__menu .line1 {
-  stroke-dasharray: 1 40;
+  stroke-dasharray: 0 26;
   stroke-dashoffset: -33px;
 }
 .active.nav__menu .line2 {
   stroke-dasharray: 5 39;
-  stroke-dashoffset: -37px;
+  stroke-dashoffset: -39px;
 }
 .active.nav__menu .line3 {
   stroke-dasharray: 5 39;
-  stroke-dashoffset: -37px;
+  stroke-dashoffset: -39px;
 }
 .active.nav__menu .line4 {
-  stroke-dasharray: 1 40;
+  stroke-dasharray: 0 41;
   stroke-dashoffset: -33px;
 }
 .active.nav__menu .x {
@@ -189,6 +190,7 @@
 
   &:hover {
     animation: rotation 0.75s linear;
+    cursor: pointer;
     color: var(--first-color);
   }
 }
@@ -285,6 +287,7 @@ ul .nav__list {
   position: absolute;
   right: 165px;
   width: 1.5rem;
+  cursor: pointer;
 }
 
 .nav__button--english {
@@ -295,6 +298,7 @@ ul .nav__list {
   position: absolute;
   right: 165px;
   width: 1.5rem;
+  cursor: pointer;
 }
 
 .nav__button--animation {

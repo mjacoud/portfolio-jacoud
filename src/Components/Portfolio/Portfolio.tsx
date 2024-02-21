@@ -6,7 +6,7 @@ import gym_image from '../../assets/image/projects/gym.png'
 import meal_image from '../../assets/image/projects/meals.png'
 import role_image from '../../assets/image/projects/role.png'
 
-export const Portfolio = ({ theme, currentLanguage }: Partial<themeProps>) => {
+export const Portfolio = ({currentLanguage }: Partial<themeProps>) => {
   const { t } = useTranslation(currentLanguage)
 
   return (

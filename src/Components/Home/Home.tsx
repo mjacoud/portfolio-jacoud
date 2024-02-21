@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { themeProps } from '../../types/types'
 import { motion } from 'framer-motion'
-import image_croped from '/src/assets/image/photos/image-croped.png'
+import image_croped from '../../assets/image/photos/image-croped.png'
 
 export const Home = ({ theme, currentLanguage }: Partial<themeProps>) => {
   const { t } = useTranslation(currentLanguage)
@@ -17,7 +17,7 @@ export const Home = ({ theme, currentLanguage }: Partial<themeProps>) => {
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.5 }}
               variants={{
-                hidden: { opacity: 0, y: -50 },
+                hidden: { opacity: 0, y: -25 },
                 visible: { opacity: 1, y: 0 }
               }}
               className="home__social"

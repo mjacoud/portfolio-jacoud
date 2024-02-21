@@ -4,9 +4,6 @@ import '../../App.css'
 import { themeProps } from '../../types/types'
 
 export const Navbar = ({
-  theme,
-  setTheme,
-  hue,
   setHue,
   mode,
   setMode,
@@ -20,7 +17,7 @@ export const Navbar = ({
     'nav__sectionMenu--close'
   )
 
-  const [scrollClass, setScrollClass] = useState('nav container')
+  const [scrollClass, setScrollClass] = useState('header')
 
   const [isSettingsMenuOpen, setIsSettingsMenuOpen] = useState(
     'nav__settingsMenu--close'
@@ -75,11 +72,11 @@ export const Navbar = ({
 
   useEffect(() => {
     const handleScroll = (e: Event) => {
-      window.scrollY <= 20
+      window.scrollY <= 100
         ? setScrollClass('header')
         : setScrollClass(`header scroll__${mode}--header`)
     }
-    console.log(mode)
+    console.log(window.scrollY)
     window.addEventListener('scroll', handleScroll)
   }, [scrollClass])
 

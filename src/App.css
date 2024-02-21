@@ -33,7 +33,7 @@ html {
 }
 
 body {
-  margin: 0 0 3rem 0;
+  margin: 0 0 0rem 0;
   font-family: "poppins-medium", sans-serif;
   font-size: 0.938rem;
   background-color: var(--body-color);
@@ -209,7 +209,7 @@ img {
 .nav {
   align-items: center;
   display: flex;
-  height: 3rem;
+  height: 0rem;
   justify-content: space-between;
   max-width: 968px;
 }
@@ -282,6 +282,7 @@ img {
 
 .burger {
   filter: url(#gooeyness);
+  cursor: pointer;
 }
 
 .x {
@@ -335,22 +336,22 @@ img {
 }
 
 .active.nav__menu .line1 {
-  stroke-dasharray: 1 40;
+  stroke-dasharray: 0 26;
   stroke-dashoffset: -33px;
 }
 
 .active.nav__menu .line2 {
   stroke-dasharray: 5 39;
-  stroke-dashoffset: -37px;
+  stroke-dashoffset: -39px;
 }
 
 .active.nav__menu .line3 {
   stroke-dasharray: 5 39;
-  stroke-dashoffset: -37px;
+  stroke-dashoffset: -39px;
 }
 
 .active.nav__menu .line4 {
-  stroke-dasharray: 1 40;
+  stroke-dasharray: 0 41;
   stroke-dashoffset: -33px;
 }
 
@@ -384,6 +385,7 @@ img {
 }
 .uil-setting:hover {
   animation: rotation 0.75s linear;
+  cursor: pointer;
   color: var(--first-color);
 }
 
@@ -469,6 +471,7 @@ ul .nav__list {
   position: absolute;
   right: 165px;
   width: 1.5rem;
+  cursor: pointer;
 }
 
 .nav__button--english {
@@ -479,6 +482,7 @@ ul .nav__list {
   position: absolute;
   right: 165px;
   width: 1.5rem;
+  cursor: pointer;
 }
 
 .nav__button--animation {
@@ -794,7 +798,7 @@ button .uil {
 }
 
 .contact__stack {
-  padding-bottom: 2rem;
+  padding-bottom: 6rem;
   padding-top: 2rem;
 }
 
@@ -923,7 +927,7 @@ button .uil {
     background-color: var(--body-color);
     border-radius: 1.5rem 1.5rem 0 0;
     bottom: 0;
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 -1px 4px #b7adad;
     left: 0;
     padding: 2rem 1.5rem 4rem;
     position: fixed;
@@ -943,7 +947,7 @@ button .uil {
     background-color: var(--body-color);
     border-radius: 1.5rem 1.5rem 0 0;
     bottom: 0;
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 -1px 4px #b7adad;
     left: 0;
     padding: 2rem 1.5rem 4rem;
     position: fixed;
@@ -1023,7 +1027,7 @@ button .uil {
   .uil-setting {
     font-size: 3rem;
     right: 150px;
-    top: 14px;
+    top: 10px;
   }
   .nav__menu svg {
     height: 83px;
@@ -1053,7 +1057,7 @@ button .uil {
     font-size: 2rem;
   }
   .nav__list {
-    padding-bottom: 3rem;
+    padding-bottom: 6rem;
   }
   /* Medium Home */
   .home__content {
@@ -1100,7 +1104,7 @@ button .uil {
     padding: 0rem 0 4rem;
   }
   .home__social {
-    padding-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
   }
   .section__title {
     font-size: 3.5rem;
