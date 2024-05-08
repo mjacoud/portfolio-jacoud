@@ -22,9 +22,15 @@
     padding-top: 20px;
   }
 
-  .section {
-    padding: 0rem 0 4rem;
+  .home__description{
+    font-size: 1.25rem;
   }
+
+  .button.button--flex{
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+
 
   .nav__logo--mini {
     color: var(--title-color);
@@ -54,7 +60,8 @@
 
     border-radius: 1.5rem 1.5rem 0 0;
 
-    bottom: 0;
+    bottom: 100px;
+
 
     box-shadow: 0 -1px 4px #b7adad;
     left: 0;
@@ -68,6 +75,10 @@
 
     width: 100%;
   }
+
+.skills__section{
+  grid-template-columns: repeat(3, 1fr);
+}
 }
 
 @media screen and (min-width: 350px) {
@@ -75,8 +86,15 @@
     display: none;
   }
 
+  .nav {
+    height: 3rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    margin: auto;
+  }
+
   .nav__logo {
     display: block;
+    padding-left: 1rem;
   }
 
   .nav__settingsMenu--open {
@@ -84,12 +102,14 @@
 
     border-radius: 1.5rem 1.5rem 0 0;
 
-    bottom: 0;
+    bottom: 115px;
 
-    box-shadow: 0 -1px 4px #b7adad;
+
+    box-shadow: 5px 1px 10px #b7adad;
+
     left: 0;
 
-    padding: 2rem 1.5rem 4rem;
+    padding: 2rem 1.5rem 0;
     position: fixed;
 
     text-align: center;
@@ -97,6 +117,40 @@
     transition: 0.3s;
 
     width: 100%;
+  }
+
+  .home__social-icon{
+    font-size: 2rem;
+  }
+
+  .home__data{
+    padding: 0 4rem 0 4rem;
+  }
+
+  .section__subtitle{
+    font-size: 1.1rem;
+  }
+
+  .about__description{
+    font-size: 1rem;
+  }
+
+  .about__buttons{
+    padding-bottom: 2rem;
+  }
+
+  #portfolio {
+    
+    display: flex;
+    
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__stack{
+    padding-bottom: 0;
   }
 }
 
@@ -109,13 +163,11 @@
 @media screen and (min-width: 460px) {
   /* Smallest Home */
 
-  .container {
-    margin-left: $mb-1;
-    margin-right: $mb-1;
-  }
 
   .nav__menu {
+
     padding: 2rem 0.25rem 4rem;
+
   }
 
   .home__title {
@@ -134,9 +186,6 @@
     padding-top: 20px;
   }
 
-  .section {
-    padding: 0rem 0 4rem;
-  }
 
   .nav__logo--mini {
     display: none;
@@ -175,9 +224,6 @@
     height: 5rem;
   }
 
-  .nav {
-    height: 100%;
-  }
 
   .nav__logo {
     font-size: 2rem;
@@ -230,7 +276,7 @@
   }
 
   .nav__list {
-    padding-bottom: 6rem;
+    padding-bottom: 2rem;
   }
   /* Medium Home */
   .home__content {
@@ -238,17 +284,10 @@
     flex-direction: column;
   }
 
-  .home__img {
-    padding-left: 65px;
-  }
 
   .home__social {
     display: flex;
     gap: 20px;
-  }
-
-  .home__blob {
-    margin-right: 80px;
   }
 
   .home__title {
@@ -285,9 +324,6 @@
     font-size: 2.7rem;
   }
 
-  .section {
-    padding: 0rem 0 4rem;
-  }
 
   .home__social {
     padding-bottom: 0.5rem;
@@ -332,20 +368,20 @@
   }
 
   .skills__card {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    padding-bottom: 2rem;
+    grid-template-columns: repeat(3,1fr);
+
   }
 
   .skills__container-title {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .skills__item {
-    padding-bottom: 2rem;
+    padding:1rem;
   }
 
   .skills__item-title {
-    font-size: 1.5rem;
+    font-size: 0.9rem;
   }
 
   .skills__item-longTitle {
@@ -375,6 +411,8 @@
 
   .contact__form .button--flex {
     font-size: 1.75rem;
+    margin: 0.813rem;
+    padding: 0.75rem 1rem 1rem 0;
   }
 
   .button--contact {
@@ -393,7 +431,7 @@
   /* Big Nav */
 
   .header {
-    height: 10rem;
+    height: 7rem;
   }
 
   .nav {
@@ -426,12 +464,12 @@
   .uil-setting {
     font-size: 4rem;
     right: 150px;
-    top: 45px;
+    top: 20px;
   }
 
   .nav__menu svg {
     height: 120px;
-    top: 15%;
+    top: -2px;
     width: 130px;
   }
 
@@ -454,11 +492,54 @@
     display: flex;
     width: 335px;
   }
+
+  .contact__stack{
+    padding-bottom: 5rem;
+  }
+
+  .ProjectCard__container{
+  height: 50vh;
+  width: 42vw;
+
+  max-height: 565px;
+}
+
+.tag__container{
+
+padding: 0.5rem;
+  img{
+  
+  width: 25px;
+  }
+}
+
+.tag__title-container{
+font-size: 0.75rem;
+}
+
+.CardInformation__title{
+  font-size: 3rem;
+  padding-top: 2rem; 
+}
+
+.CardInformation__subtitle{
+  font-size: 1.5rem;
+}
+
+.ProjectCard__container{
+  height: 65vh;
+}
+
+.portfolio__project{
+  grid-template-columns: repeat(3,1fr);
+
+}
+
 }
 
 @media screen and (min-width: 900px) {
   .skills__card {
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns: repeat(3,1fr);
   }
 
   .container {
@@ -468,6 +549,6 @@
 
 @media screen and (min-width: 1024px) {
   .skills__card {
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(3,1fr);
   }
 }

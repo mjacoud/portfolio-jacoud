@@ -1,19 +1,18 @@
 @use '../../Styles/Abstract/index' as *;
 
 .skills__section{
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
 
-	align-items: center ;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+margin: 0 4rem;
+gap:1rem;
+
 }
 
 .skills__container{
   border-radius: 20%;
 
   padding: 1.75rem;
-
-	width: 65%;
 
   background-color:white;
 
@@ -24,7 +23,7 @@
 
 
 .skills__container-title{
-  padding-bottom: 2rem;
+  padding-bottom: 1.75rem;
   text-align: center;
   color:black
 }
@@ -35,27 +34,25 @@
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  border: 3px solid rgba(0, 0, 0, 0);;
 }
 
 .skills__card{
-  display:grid;
-  grid-template-columns: repeat(auto-fit,minmax(75px,1fr));
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 
 }
 
 .skills__item-logo{
-
-
-  width: 50px;
+  width: 40px;
   height: auto;
-
-  
   border-radius: 20%;
+  position: relative;
+  z-index: 100;
 }
 
 .skills__item-title{
-  font-size: $h3-font-size;
+  font-size: 0.8rem;
   font-weight: $font-semi-bold;
   color:black
 }
@@ -66,3 +63,32 @@
   text-align: center;
   color:black
 }
+
+.skills__tooltip{
+  border: var(--first-color) 3px solid;
+  border-radius: 12px;
+  position: relative;
+  z-index: 999;
+}
+
+
+.skills__tooltip-modal{
+  position: absolute;
+}
+
+.skills__tooltip-data{
+    background-color: var(--first-color);
+    position: relative;
+    top:5rem;
+    left: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 20rem;
+    z-index: 999;
+
+    p{
+      font-family: inherit;
+      padding: 15px 20px;
+      color: white;
+    }
+  }

@@ -86,7 +86,7 @@ img {
   --text-color:hsl(var(--hue-color),8%,45%);
   --text-color-light:hsl(var(--hue-color),8%,65%);
   --input-color:hsl(var(--hue-color),70%,96%);
-  --body-color:hsl(var(--hue-color),60%,99%);
+  --body-color:#ebedf0;
   --container-color:#fff;
 }
 
@@ -230,7 +230,7 @@ img {
 .nav__sectionMenu--open {
   background-color: var(--body-color);
   border-radius: 1.5rem 1.5rem 0 0;
-  bottom: 0;
+  bottom: 100px;
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
   left: 0;
   padding: 2rem 1.5rem 4rem;
@@ -278,6 +278,7 @@ img {
   right: 2%;
   top: 0%;
   width: 50px;
+  cursor: pointer;
 }
 
 .burger {
@@ -532,15 +533,13 @@ ul .nav__list {
   background-color: var(--first-color);
   -webkit-clip-path: circle(40%);
           clip-path: circle(40%);
-  height: 400px;
-  width: 400px;
 }
 
 .home__blob-img {
   position: relative;
   right: 15px;
   top: -45px;
-  width: 358px;
+  width: 300px;
 }
 
 .blob {
@@ -650,23 +649,26 @@ ul .nav__list {
   justify-content: center;
 }
 
+.about__data {
+  padding: 0 10rem 0 10rem;
+}
+
 .skills__section {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 4rem;
+  gap: 1rem;
 }
 
 .skills__container {
   border-radius: 20%;
   padding: 1.75rem;
-  width: 65%;
   background-color: white;
   box-shadow: inset 0px -2px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .skills__container-title {
-  padding-bottom: 2rem;
+  padding-bottom: 1.75rem;
   text-align: center;
   color: black;
 }
@@ -677,22 +679,24 @@ ul .nav__list {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  border: 3px solid rgba(0, 0, 0, 0);
 }
 
 .skills__card {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .skills__item-logo {
-  width: 50px;
+  width: 40px;
   height: auto;
   border-radius: 20%;
+  position: relative;
+  z-index: 100;
 }
 
 .skills__item-title {
-  font-size: 1.125rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: black;
 }
@@ -704,6 +708,33 @@ ul .nav__list {
   color: black;
 }
 
+.skills__tooltip {
+  border: var(--first-color) 3px solid;
+  border-radius: 12px;
+  position: relative;
+  z-index: 999;
+}
+
+.skills__tooltip-modal {
+  position: absolute;
+}
+
+.skills__tooltip-data {
+  background-color: var(--first-color);
+  position: relative;
+  top: 5rem;
+  left: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 20rem;
+  z-index: 999;
+}
+.skills__tooltip-data p {
+  font-family: inherit;
+  padding: 15px 20px;
+  color: white;
+}
+
 .portfolio__container {
   display: flex;
   justify-content: center;
@@ -711,16 +742,10 @@ ul .nav__list {
 }
 
 .portfolio__project {
-  width: 70%;
   border-radius: 20%;
   transition: 0.5s all ease-in-out;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.portfolio__project:hover {
-  opacity: 0.3;
-  transform: scale(1.1);
+  display: grid;
+  gap: 2rem;
 }
 
 .portfolio__text {
@@ -743,6 +768,203 @@ ul .nav__list {
   display: flex;
   justify-content: center;
   width: 70%;
+}
+
+.tag__container {
+  display: flex;
+  gap: 0.5rem;
+  font-family: "montserrat";
+  font-weight: 500;
+  font-size: 0.65rem;
+  background-color: var(--first-color);
+  color: white;
+  border-radius: 1rem;
+  padding: 0.3rem;
+  align-items: center;
+}
+
+.searchTag__container {
+  max-width: 4rem;
+  height: 1.2rem;
+  background-color: var(--first-color);
+  color: white;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CardInformation__title {
+  font-size: 1.5rem;
+  color: black;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.CardInformation__subtitle {
+  font-size: 1rem;
+  color: gray;
+}
+
+.cardInformation__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.TagGroup__container {
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 1rem;
+}
+
+.ProjectCard__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  height: 40rem;
+  width: 40vh;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.24);
+  max-width: 337px;
+  max-height: 490px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.ProjectCard__container:hover {
+  transform: scale(1.05);
+}
+
+.projectCard__image {
+  border-radius: 1rem;
+}
+.projectCard__image:hover {
+  transform: scale(1.05);
+}
+
+.dialog__background {
+  position: fixed; /* Stay in place */
+  z-index: 999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal__container {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 65%;
+  height: 60%;
+  border-radius: 15px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.modal__layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__title {
+  padding: 1rem 0 2rem;
+  margin: 2rem 0 0 2rem;
+}
+
+.info {
+  width: 50%;
+}
+
+.video {
+  width: auto;
+  height: 63vh;
+}
+
+.modal__video {
+  padding: 2rem 2rem 2rem 4rem;
+  width: auto;
+  max-height: 390px;
+}
+
+.modal__description {
+  line-height: 1.5rem;
+  margin: 0 0px 0 2.3rem;
+}
+
+.portfolio__button {
+  padding: 2rem;
+  background-color: var(--first-color);
+  color: var(--container-color);
+  border-radius: 15px;
+  width: 40%;
+  height: 20px;
+  margin: 2rem;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.portfolio__button a {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.portfolio__button--text {
+  margin-right: 1rem;
+}
+
+.button__image {
+  width: 30px;
+  height: 30px;
+  fill: #fefefe;
+}
+
+.button__container {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.info h3 {
+  margin-left: 2rem;
+}
+
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button__closeButton {
+  width: 45px;
+  height: 45px;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.portfolio__search {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5rem;
+  padding: 2rem 0 2rem;
+}
+
+.filterProject__layout {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .contact__container {
@@ -787,7 +1009,6 @@ button .uil {
   cursor: pointer;
   display: flex;
   justify-content: center;
-  margin-left: 1rem;
   width: 98%;
 }
 
@@ -798,7 +1019,7 @@ button .uil {
 }
 
 .contact__stack {
-  padding-bottom: 6rem;
+  padding-bottom: 3%;
   padding-top: 2rem;
 }
 
@@ -810,12 +1031,19 @@ button .uil {
   padding-right: 1rem;
 }
 
-.container {
-  max-width: 768px;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* .container{
+  max-width: 768px;
+
+  margin-left: $mb-1-5;
+  margin-right: $mb-1-5;
+}
+ */
 .grid {
   display: grid;
   gap: 1.5rem;
@@ -831,7 +1059,7 @@ button .uil {
 }
 
 .section {
-  padding: 4rem 0 4rem;
+  padding: 2rem 0 2rem;
 }
 
 .section__title {
@@ -902,8 +1130,12 @@ button .uil {
     grid-auto-flow: column;
     padding-top: 20px;
   }
-  .section {
-    padding: 0rem 0 4rem;
+  .home__description {
+    font-size: 1.25rem;
+  }
+  .button.button--flex {
+    font-size: 1.125rem;
+    font-weight: 500;
   }
   .nav__logo--mini {
     color: var(--title-color);
@@ -926,7 +1158,7 @@ button .uil {
   .nav__settingsMenu--open {
     background-color: var(--body-color);
     border-radius: 1.5rem 1.5rem 0 0;
-    bottom: 0;
+    bottom: 100px;
     box-shadow: 0 -1px 4px #b7adad;
     left: 0;
     padding: 2rem 1.5rem 4rem;
@@ -934,26 +1166,59 @@ button .uil {
     text-align: center;
     transition: 0.3s;
     width: 100%;
+  }
+  .skills__section {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media screen and (min-width: 350px) {
   .nav__logo--mini {
     display: none;
   }
+  .nav {
+    height: 3rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    margin: auto;
+  }
   .nav__logo {
     display: block;
+    padding-left: 1rem;
   }
   .nav__settingsMenu--open {
     background-color: var(--body-color);
     border-radius: 1.5rem 1.5rem 0 0;
-    bottom: 0;
-    box-shadow: 0 -1px 4px #b7adad;
+    bottom: 115px;
+    box-shadow: 5px 1px 10px #b7adad;
     left: 0;
-    padding: 2rem 1.5rem 4rem;
+    padding: 2rem 1.5rem 0;
     position: fixed;
     text-align: center;
     transition: 0.3s;
     width: 100%;
+  }
+  .home__social-icon {
+    font-size: 2rem;
+  }
+  .home__data {
+    padding: 0 4rem 0 4rem;
+  }
+  .section__subtitle {
+    font-size: 1.1rem;
+  }
+  .about__description {
+    font-size: 1rem;
+  }
+  .about__buttons {
+    padding-bottom: 2rem;
+  }
+  #portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact__stack {
+    padding-bottom: 0;
   }
 }
 @media screen and (min-width: 455px) {
@@ -963,10 +1228,6 @@ button .uil {
 }
 @media screen and (min-width: 460px) {
   /* Smallest Home */
-  .container {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
   .nav__menu {
     padding: 2rem 0.25rem 4rem;
   }
@@ -982,9 +1243,6 @@ button .uil {
     gap: 20px;
     grid-auto-flow: column;
     padding-top: 20px;
-  }
-  .section {
-    padding: 0rem 0 4rem;
   }
   .nav__logo--mini {
     display: none;
@@ -1011,9 +1269,6 @@ button .uil {
   /* Medium Navbar */
   .header {
     height: 5rem;
-  }
-  .nav {
-    height: 100%;
   }
   .nav__logo {
     font-size: 2rem;
@@ -1057,22 +1312,16 @@ button .uil {
     font-size: 2rem;
   }
   .nav__list {
-    padding-bottom: 6rem;
+    padding-bottom: 2rem;
   }
   /* Medium Home */
   .home__content {
     display: flex;
     flex-direction: column;
   }
-  .home__img {
-    padding-left: 65px;
-  }
   .home__social {
     display: flex;
     gap: 20px;
-  }
-  .home__blob {
-    margin-right: 80px;
   }
   .home__title {
     font-size: 3rem;
@@ -1099,9 +1348,6 @@ button .uil {
   }
   .uil-github {
     font-size: 2.7rem;
-  }
-  .section {
-    padding: 0rem 0 4rem;
   }
   .home__social {
     padding-bottom: 0.5rem;
@@ -1136,17 +1382,16 @@ button .uil {
     padding: 1.25rem 4.5rem 1.25rem 4.5rem;
   }
   .skills__card {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    padding-bottom: 2rem;
+    grid-template-columns: repeat(3, 1fr);
   }
   .skills__container-title {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
   .skills__item {
-    padding-bottom: 2rem;
+    padding: 1rem;
   }
   .skills__item-title {
-    font-size: 1.5rem;
+    font-size: 0.9rem;
   }
   .skills__item-longTitle {
     font-size: 1.5rem;
@@ -1168,6 +1413,8 @@ button .uil {
   }
   .contact__form .button--flex {
     font-size: 1.75rem;
+    margin: 0.813rem;
+    padding: 0.75rem 1rem 1rem 0;
   }
   .button--contact {
     align-items: center;
@@ -1181,7 +1428,7 @@ button .uil {
 @media screen and (min-width: 768px) {
   /* Big Nav */
   .header {
-    height: 10rem;
+    height: 7rem;
   }
   .nav {
     height: 100%;
@@ -1207,11 +1454,11 @@ button .uil {
   .uil-setting {
     font-size: 4rem;
     right: 150px;
-    top: 45px;
+    top: 20px;
   }
   .nav__menu svg {
     height: 120px;
-    top: 15%;
+    top: -2px;
     width: 130px;
   }
   .nav__button--mode {
@@ -1230,10 +1477,40 @@ button .uil {
     display: flex;
     width: 335px;
   }
+  .contact__stack {
+    padding-bottom: 5rem;
+  }
+  .ProjectCard__container {
+    height: 50vh;
+    width: 42vw;
+    max-height: 565px;
+  }
+  .tag__container {
+    padding: 0.5rem;
+  }
+  .tag__container img {
+    width: 25px;
+  }
+  .tag__title-container {
+    font-size: 0.75rem;
+  }
+  .CardInformation__title {
+    font-size: 3rem;
+    padding-top: 2rem;
+  }
+  .CardInformation__subtitle {
+    font-size: 1.5rem;
+  }
+  .ProjectCard__container {
+    height: 65vh;
+  }
+  .portfolio__project {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media screen and (min-width: 900px) {
   .skills__card {
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
   }
   .container {
     max-width: none;
@@ -1241,6 +1518,6 @@ button .uil {
 }
 @media screen and (min-width: 1024px) {
   .skills__card {
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
   }
 }/*# sourceMappingURL=App.css.map */

@@ -1,10 +1,9 @@
 import { useTranslation } from 'react-i18next'
 import { themeProps } from '../../types/types'
 import { motion } from 'framer-motion'
-import about from './about.scss'
 import image2_croped from '/src/assets/image/photos/image2-croped.png'
 
-export const About = ({ theme, currentLanguage }: Partial<themeProps>) => {
+export const About = ({currentLanguage }: Partial<themeProps>) => {
   const { t } = useTranslation(currentLanguage)
 
   return (
@@ -67,63 +66,6 @@ export const About = ({ theme, currentLanguage }: Partial<themeProps>) => {
             >
               {t('AboutDescription')}
             </motion.p>
-
-            {/*    <div className="about__info">
-              <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.6 }}
-                variants={{
-                  hidden: { opacity: 0, x: -50 },
-                  visible: { opacity: 1, x: 0 }
-                }}
-              >
-                <span className="about__info-title">01+</span>
-                <span className="about__info-name">
-                  {t('AboutYears')}
-                  <br />
-                  {t('AboutExperience')}
-                </span>
-              </motion.div>
-
-              <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.6 }}
-                variants={{
-                  hidden: { opacity: 0, x: -80 },
-                  visible: { opacity: 1, x: 0 }
-                }}
-              >
-                <span className="about__info-title">20+</span>
-                <span className="about__info-name">
-                  {t('AboutCompleted')}
-                  <br />
-                  {t('AboutProjects')}
-                </span>
-              </motion.div>
-
-              <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.6 }}
-                variants={{
-                  hidden: { opacity: 0, x: -80 },
-                  visible: { opacity: 1, x: 0 }
-                }}
-              >
-                <span className="about__info-title">04+</span>
-                <span className="about__info-name">
-                  {t('AboutCompanies')}
-                  <br />
-                  {t('AboutWorked')}
-                </span>
-              </motion.div>
-            </div> */}
-
             <div className="about__buttons">
               <motion.a
                 initial="hidden"

@@ -12,6 +12,9 @@ export const Navbar = ({
   setCurrentLanguage
 }: themeProps) => {
   const { t } = useTranslation(currentLanguage)
+  
+
+  const [language, setLanguage] = useState(localStorage.getItem('language')||'nav__button--english')
 
   const [isSectionMenuOpen, setIsSectionMenuOpen] = useState(
     'nav__sectionMenu--close'
@@ -19,11 +22,8 @@ export const Navbar = ({
 
   const [scrollClass, setScrollClass] = useState('header')
 
-  const [isSettingsMenuOpen, setIsSettingsMenuOpen] = useState(
-    'nav__settingsMenu--close'
-  )
+  const [isSettingsMenuOpen, setIsSettingsMenuOpen] = useState('nav__settingsMenu--close')
 
-  const [language, setLanguage] = useState('nav__button--english')
 
   const handleSectionMenu = () => {
     if (isSectionMenuOpen === 'nav__sectionMenu--open') {
@@ -46,8 +46,10 @@ export const Navbar = ({
   const handleMode = () => {
     if (mode == 'light') {
       setMode('dark')
+      localStorage.setItem('mode','dark')
     } else {
       setMode(`light`)
+      localStorage.setItem('mode','light')
     }
   }
 
@@ -58,6 +60,7 @@ export const Navbar = ({
       setCurrentLanguage('translationEN')
       setTimeout(() => {
         setLanguage('nav__button--english')
+        localStorage.setItem('language','nav__button--english')
       }, 1000)
     }
     if (language === 'nav__button--english') {
@@ -66,6 +69,7 @@ export const Navbar = ({
       setCurrentLanguage('translationBR')
       setTimeout(() => {
         setLanguage('nav__button--portuguese')
+        localStorage.setItem('language','nav__button--portuguese')
       }, 1000)
     }
   }
@@ -76,7 +80,6 @@ export const Navbar = ({
         ? setScrollClass('header')
         : setScrollClass(`header scroll__${mode}--header`)
     }
-    console.log(window.scrollY)
     window.addEventListener('scroll', handleScroll)
   }, [scrollClass])
 
@@ -125,42 +128,60 @@ export const Navbar = ({
               <li className="nav__item">
                 <div
                   className="nav__color--red"
-                  onClick={() => setHue('red')}
+                  onClick={() => {
+                  setHue('red')
+                  localStorage.setItem('hue','red')}
+                  }
                 ></div>
               </li>
 
               <li className="nav__item">
                 <div
                   className="nav__color--green"
-                  onClick={() => setHue('green')}
+                  onClick={() => {
+                    setHue('green')
+                    localStorage.setItem('hue','green')}
+                    }
                 ></div>
               </li>
 
               <li className="nav__item">
                 <div
                   className="nav__color--purple"
-                  onClick={() => setHue('purple')}
+                  onClick={() => {
+                    setHue('purple')
+                    localStorage.setItem('hue','purple')}
+                    }
                 ></div>
               </li>
 
               <li className="nav__item">
                 <div
                   className="nav__color--blue"
-                  onClick={() => setHue('blue')}
+                  onClick={() => {
+                    setHue('blue')
+                    localStorage.setItem('hue','blue')}
+                    }
                 ></div>
               </li>
 
               <li className="nav__item">
                 <div
                   className="nav__color--orange"
-                  onClick={() => setHue('orange')}
+                  onClick={() => {
+                    setHue('orange')
+                    localStorage.setItem('hue','orange')}
+                    }
                 ></div>
               </li>
 
               <li className="nav__item">
                 <div
                   className="nav__color--yellow"
-                  onClick={() => setHue('yellow')}
+                  onClick={() => {
+                    setHue('yellow')
+                    localStorage.setItem('hue','yellow')}
+                    }
                 ></div>
               </li>
             </ul>

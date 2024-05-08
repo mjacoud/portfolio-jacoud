@@ -9,15 +9,15 @@ export const Home = ({ theme, currentLanguage }: Partial<themeProps>) => {
   return (
     <>
       <section className={`${theme} home section`} id="home">
-        <div className="home__container container grid">
-          <div className="home__content grid">
+        <div className="home__container container">
+          <div className="home__content">
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.5 }}
               variants={{
-                hidden: { opacity: 0, y: -25 },
+                hidden: { opacity: 0, y: -15 },
                 visible: { opacity: 1, y: 0 }
               }}
               className="home__social"

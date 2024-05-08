@@ -23,7 +23,7 @@ export const Contact = ({ theme, currentLanguage }: Partial<themeProps>) => {
 
   return (
     <>
-      <section className="contact section" id="contact">
+      <section className="contact section container" id="contact">
         <div className="section__header">
           <motion.h2
             initial="hidden"
