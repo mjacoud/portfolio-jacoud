@@ -24,16 +24,19 @@ import Select, { MultiValue, SingleValue } from 'react-select'
 
 const animatedComponents = makeAnimated();
 
-export interface tecnologiesTag{
-    readonly label:string;
-    readonly value:string;
-    readonly image:string;
-  }
+export interface TecnologiesTag {
+    label: string;
+    value: string;
+    image: string;
+  };
+
+
 export interface IViewOptions{
-  readonly label:string;
-  readonly value:string;
+ label:string;
+value:string;
 }
-export const techOptions: tecnologiesTag[] = [
+
+export const techOptions: TecnologiesTag[] = [
   { value: 'javascript', label: 'JavaScript', image: javascript },
   { value: 'typescript', label: 'TypeScript', image: typescript },
   { value: 'python', label: 'Python', image: python },
@@ -48,10 +51,15 @@ export const techOptions: tecnologiesTag[] = [
   { value: 'git', label: 'Git', image: git },
 ];
 
+;
+
+
+export const techOptionsArray = Object.values(techOptions);
+
 export const Portfolio = ({currentLanguage }: Partial<themeProps>) => {
   const { t } = useTranslation(currentLanguage)
 
-  const [selectedTags,setSelectedTags]=useState<MultiValue<tecnologiesTag> | null>([{ value: 'typescript', label: 'TypeScript', image: typescript }])
+  const [selectedTags,setSelectedTags]=useState<MultiValue<TecnologiesTag> | null>([techOptions[1]]);
   const [selectedView,setSelectedView]=useState<SingleValue<IViewOptions>>({ value: 'relevant', label: 'Mais Relevantes'})
   const roleModal = useRoleModal()
   const gymModal = useGymModal()
@@ -109,7 +117,7 @@ export const Portfolio = ({currentLanguage }: Partial<themeProps>) => {
             }}
             />
             <Select 
-              options={techOptions}
+              options={techOptionsArray}
               isMulti
               isSearchable
               defaultValue={selectedTags}

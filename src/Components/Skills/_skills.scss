@@ -3,10 +3,9 @@
 .skills__section{
 
 display: grid;
-grid-template-columns: repeat(3,1fr);
 margin: 0 4rem;
 gap:1rem;
-
+justify-content: center;
 }
 
 .skills__container{
@@ -40,7 +39,7 @@ gap:1rem;
 .skills__card{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
+  gap: 1rem;
 }
 
 .skills__item-logo{

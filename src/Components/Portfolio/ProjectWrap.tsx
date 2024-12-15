@@ -14,14 +14,15 @@ import git from '../../assets/image/icons/git.svg'
 
 import { ProjectCard } from './ProjectCard'
 import typescript from '../../assets/image/icons/typescript.svg'
-import { IViewOptions, tecnologiesTag } from './Portfolio'
+import { IViewOptions, TecnologiesTag } from './Portfolio'
 import { MultiValue, SingleValue } from 'react-select/dist/declarations/src/types'
 import { useRoleModal } from '../../hooks/useRoleModal'
 
 interface IProjectWrap{
-  selectedTags:MultiValue<tecnologiesTag> | null
+  selectedTags:MultiValue<TecnologiesTag> | null
   selectedView:SingleValue<IViewOptions>
 }
+
 const tags = {
   javascript: { value: 'javascript', label: 'JavaScript', image: javascript },
   typescript: { value: 'typescript', label: 'TypeScript', image: typescript },
@@ -44,8 +45,9 @@ const tags = {
     const projects = [
       {
         img:role,
-        tags:[tags.typescript],
-        title:'Role',subtitle:'Role na cidade',
+        tags:[tags.typescript,tags.git,tags.java,tags.jest],
+        title:'Role',
+        subtitle:'Role na cidade',
         onclick:()=>{roleModal.onOpen()},
         isRelevant:true,
         date:'2024-05-10T12:00:00Z'},
@@ -67,10 +69,10 @@ const tags = {
     ]
 
     const projectFiltered =projects.filter(project=> {
-     const chosenTags = JSON.stringify(selectedTags)
-     const projectTags = JSON.stringify(project.tags)
-     if (projectTags.includes(chosenTags)) return project
-     if (chosenTags == '[]') return project 
+     const chosenTags = selectedTags!.map(tag=>tag.value)
+     const projectTags = project.tags.map(tag=>tag.value)
+     if (projectTags) return project
+     if (!chosenTags) return project 
     })
 
     const latestViewRendering = projectFiltered.sort((a, b) => {
@@ -101,7 +103,9 @@ const tags = {
             subtitle={project.subtitle}
             title={project.title}
             onClick={project.onclick}
-            key={project.title}/> )}
+            key={project.title}/>
+            )
+            }
              
             {selectedView?.value == 'latest'&& latestViewRendering.map(project=>
               <ProjectCard 

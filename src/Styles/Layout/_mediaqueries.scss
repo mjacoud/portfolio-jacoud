@@ -76,9 +76,6 @@
     width: 100%;
   }
 
-.skills__section{
-  grid-template-columns: repeat(3, 1fr);
-}
 }
 
 @media screen and (min-width: 350px) {
@@ -86,7 +83,7 @@
     display: none;
   }
 
-  .nav {
+  .nav {  
     height: 3rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
     margin: auto;
@@ -102,10 +99,11 @@
 
     border-radius: 1.5rem 1.5rem 0 0;
 
-    bottom: 115px;
+    bottom: 45px;
+    z-index: 50;
 
 
-    box-shadow: 5px 1px 10px #b7adad;
+    box-shadow: inset 1px -2px 12px #b7adad;
 
     left: 0;
 
@@ -149,9 +147,6 @@
     align-items: center;
   }
 
-  .contact__stack{
-    padding-bottom: 0;
-  }
 }
 
 @media screen and (min-width: 455px) {

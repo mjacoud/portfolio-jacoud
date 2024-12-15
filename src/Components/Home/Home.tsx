@@ -8,7 +8,7 @@ export const Home = ({ theme, currentLanguage }: Partial<themeProps>) => {
 
   return (
     <>
-      <section className={`${theme} home section`} id="home">
+      <section className={`${theme} home`} id="home">
         <div className="home__container container">
           <div className="home__content">
             <motion.div

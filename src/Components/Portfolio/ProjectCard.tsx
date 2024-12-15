@@ -1,16 +1,12 @@
 import { CardInformation } from "./CardInformation"
 import { TagGroup } from "./TagGroup"
+import { TecnologiesTag } from "./Portfolio"
 
 
-
-interface Tag{
-    label:string
-    image:string
-}
 
 interface ProjectCardProps{
     img:string
-    tags:Tag[]
+    tags:TecnologiesTag[]
     title:string
     subtitle:string
     onClick:()=>void

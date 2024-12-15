@@ -12,6 +12,7 @@
   transition: 0.5s all ease-in-out;
   display: grid;
   gap:2rem;
+  justify-content: center;
 }
 
 
@@ -23,15 +24,6 @@
   text-decoration: none;
 }
 
-.button--portfolio{
-  padding: 1rem;
-  text-decoration: none;
-  padding: 1rem 6rem;
-
-  a{
-    color: white;
-  }
-}
 
 .portfolio__link{
   display: flex;
@@ -48,8 +40,10 @@
   background-color: var(--first-color);
   color: white;
   border-radius: 1rem;
-  padding: 0.3rem;
+  padding: 0.2rem 1rem 0.2rem 1rem;
   align-items: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(158, 158, 158, 0.3);
 }
 
 .searchTag__container{
@@ -84,7 +78,9 @@
 .TagGroup__container{
   display: flex;
   gap: 0.5rem;
-  padding-top: 1rem;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+  grid-area: d;
 }
 
 .ProjectCard__container{
@@ -110,6 +106,8 @@
 
 .projectCard__image{
   border-radius: 1rem;
+  width: 240px;
+  height: 200px;
   &:hover{
     transform: scale(1.05);
   }
@@ -127,18 +125,28 @@
 }
 
 .modal__container{
-   background-color: #fefefe;
+  background-color: #fefefe;
   padding: 20px;
   border: 1px solid #888;
-  width: 65%;
-  height: 60%;
+  width: 95%;
+  height: 95%;
   border-radius: 15px;
   position: absolute;
   right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 999;
+  display: grid;
+  grid-template-columns: repeat(2,2fr);
+  grid-template-rows: minmax(1rem,2rem);
+  grid-template-areas: "a a"
+            "b b"
+            "c c"
+            "d d"
+            "e e"
+            "f f";
 }
 
 .modal__layout{
@@ -146,10 +154,6 @@
   justify-content: space-between;
 }
 
-.modal__title{
-  padding: 1rem 0 2rem;
-  margin: 2rem 0 0 2rem;
-}
 
 .info{
   width: 50%;
@@ -161,24 +165,26 @@
 }
 
 .modal__video{
-  padding: 2rem 2rem 2rem 4rem;
   width: auto;
-  max-height: 390px;
+  max-height: 12rem;
+  grid-area: b;
 }
 
 .modal__description{
-  line-height: 1.5rem;
-  margin: 0 0px 0 2.3rem;
+  line-height: 1.35rem;
+  grid-area: e;
+  height: 12rem;
+  overflow: scroll;
+  padding:1rem 0;
 }
 
 .portfolio__button{
-  padding: 2rem;
+  padding: 1.25rem;
   background-color: var(--first-color);
   color: var(--container-color);
   border-radius: 15px;
   width: 40%;
   height: 20px;
-  margin: 2rem;
   gap: 1rem;
   display: flex;
   align-items: center;
@@ -191,6 +197,7 @@
     align-items: center;
     justify-content: center;
     color:white;
+    font-size: 0.75rem;
   }
 }
 
@@ -207,30 +214,27 @@
 
 .button__container{
   display: flex;
-  margin-top: 3rem;
+  grid-area:f;
+  gap:3rem;
+  align-items: flex-end;
+  height: 3rem;
 }
 
 .info h3{
   margin-left: 2rem ;
 }
 
-.modal__header{
-  display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .button__closeButton{
   width: 45px;
   height: 45px;
-  margin-right: 2rem;
   cursor: pointer;
 }
 
 .portfolio__search{
   display: flex;
   justify-content: flex-start;
-  gap:5rem;
+  flex-direction: column;
+  gap:2rem;
   padding:2rem 0 2rem;
 }
 
@@ -238,4 +242,35 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.modal__header{
+  grid-area: a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+}
+
+.modal__subtitle{
+  grid-area: c;
+  height: 0.5rem;
+}
+
+.tag__image{
+  background: transparent;
+  object-fit: contain;
+  filter: drop-shadow(3px 3px 1px white);
+}
+
+.modal__tagGroup {
+  grid-area: d;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    height: 2rem;
+}
+
+.button--portfolio a:visited {
+  color:white
 }

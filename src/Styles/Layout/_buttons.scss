@@ -1,5 +1,6 @@
 @use '../Abstract/index' as*;
 
+
 .button{
   display: inline-block;
 
@@ -13,7 +14,7 @@
 
   font-weight: $font-medium;
 
-
+  text-decoration: none;
   &:hover{
     background-color: var(--first-color-alt);
   }
